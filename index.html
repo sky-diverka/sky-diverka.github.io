@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Sky Diverka Links</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="All links for @sky_diverka: skydiving, tunnel coaching, discount codes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout: one phone-width column; full freefall photo as the hero, fading into the page, links below */
+  :root {
+    --bg-top: #b6eafa;     /* brand: ice blue */
+    --bg: #f1f6f9;         /* brand: cloud white */
+    --ink: #146c94;        /* brand: deep blue */
+    --ink-soft: #3b7f9f;
+    --accent: #19a7ce;     /* brand: sky blue */
+    --hot: #d43579;        /* brand: pink */
+    --card: #ffffff;
+    --glass: rgba(241, 246, 249, 0.62);
+    --card-edge: rgba(20, 108, 148, 0.14);
+    --shadow: rgba(20, 108, 148, 0.16);
+    --ring: #146c94;
+    --font-display: "Bowlby One", "Arial Black", Impact, sans-serif;
+    --font-body: "Figtree", "Helvetica Neue", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg-top: #0f3f57; --bg: #0a2433;
+      --ink: #f1f6f9; --ink-soft: #b6eafa;
+      --accent: #19a7ce; --hot: #e2508f;
+      --glass: rgba(10, 36, 51, 0.6); --card: #10364b; --card-edge: rgba(182, 234, 250, 0.16); --shadow: rgba(0, 0, 0, 0.35);
+      --ring: #b6eafa; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg-top: #0f3f57; --bg: #0a2433;
+    --ink: #f1f6f9; --ink-soft: #b6eafa;
+    --accent: #19a7ce; --hot: #e2508f;
+    --glass: rgba(10, 36, 51, 0.6); --card: #10364b; --card-edge: rgba(182, 234, 250, 0.16); --shadow: rgba(0, 0, 0, 0.35);
+    --ring: #b6eafa; color-scheme: dark;
+  }
+
+  html { min-height: 100%; background: var(--bg-top); }
+  body {
+    min-height: 100vh;
+    background: var(--bg-top);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 20px 40px;
+  }
+
+  main {
+    position: relative; z-index: 1;
+    max-width: 480px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 22px;
+  }
+
+  /* full-page photo background (a fixed layer, so it also works on iPhone Safari) */
+  .bg {
+    position: fixed; inset: 0; z-index: 0;
+    background: linear-gradient(180deg, var(--accent), var(--bg-top));
+    background-size: cover; background-position: 50% 80%;
+  }
+
+  /* first screen: title over the photo, the skydiver fully visible below it */
+  .hero {
+    min-height: calc(100svh - 60px); margin: 0;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+  }
+  .scroll-cue {
+    width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+    background: rgba(255,255,255,.7); color: #146c94;
+    backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    animation: bob 2.2s ease-in-out infinite;
+  }
+  @keyframes bob { 50% { transform: translateY(6px); } }
+  h1 {
+    margin: 0; padding-inline: 4px; text-align: center; overflow-wrap: anywhere;
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(2rem, 10vw, 3.4rem); line-height: 1; letter-spacing: -0.01em;
+    color: #146c94;                       /* always deep blue: it sits on the photo's sky, not the page */
+    text-shadow: 0 2px 0 rgba(255,255,255,.55), 0 6px 24px rgba(255,255,255,.6);
+    text-wrap: balance;
+  }
+
+  /* profile text */
+  .panel {
+    display: flex; flex-direction: column; gap: 22px;
+    padding: 22px 16px; border-radius: 28px;
+    background: var(--glass); border: 1px solid var(--card-edge);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  }
+  .profile { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+  .handle { font-family: var(--font-mono); font-size: .9rem; color: var(--accent); margin: 0; }
+  .bio { white-space: pre-line; margin: 0; max-width: 36ch; line-height: 1.55; color: var(--ink); font-size: 1.02rem; font-weight: 500; }
+
+  .socials { display: flex; gap: 14px; justify-content: center; list-style: none; margin: 2px 0 0; padding: 0; }
+  .social {
+    width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--ink); color: var(--bg);
+    transition: transform .18s ease, background .18s ease;
+  }
+  .social svg { width: 24px; height: 24px; }
+  .social:hover { transform: translateY(-2px); background: var(--hot); color: #fff; }
+  .social:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+
+  /* links */
+  .links { list-style: none; margin: 0; padding: 0; width: 100%; display: flex; flex-direction: column; gap: 14px; }
+  .link {
+    display: grid; grid-template-columns: 44px 1fr 20px; align-items: center; gap: 14px;
+    padding: 14px 18px 14px 14px; border-radius: 18px;
+    background: var(--card); border: 1px solid var(--card-edge);
+    box-shadow: 0 4px 14px var(--shadow);
+    color: var(--ink); text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .link:hover { transform: translateY(-2px); box-shadow: 0 10px 24px var(--shadow); }
+  .link:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+  .icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--accent); color: #fff; }
+  .icon svg { width: 22px; height: 22px; }
+  .text { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .label { font-weight: 700; font-size: 1.05rem; }
+  .sub { font-size: .86rem; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .arrow { color: var(--ink-soft); transition: transform .18s ease; }
+  .link:hover .arrow { transform: translate(2px, -2px); color: var(--hot); }
+  .badge {
+    display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 999px;
+    background: var(--hot); color: #fff; font-family: var(--font-mono); font-size: .72rem; vertical-align: 2px;
+  }
+
+  .deal { display: flex; flex-direction: column; }
+  .deal .link { border-radius: 18px 18px 0 0; }
+  .deal .link:hover { transform: none; }
+  .code {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    padding: 10px 14px 10px 18px; border-radius: 0 0 18px 18px;
+    background: var(--card); border: 1px dashed var(--hot); border-top: none;
+    font-size: .9rem; color: var(--ink-soft);
+  }
+  .code kbd { font-family: var(--font-mono); font-size: .95rem; color: var(--ink); letter-spacing: .04em; user-select: all; -webkit-user-select: all; }
+  .copy { font: 700 .82rem var(--font-body); color: #fff; background: var(--hot); border: none; border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+  .copy:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+  footer { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); text-align: center; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .link, .arrow, .social { transition: none; }
+    .scroll-cue { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg" id="bg" role="img"></div>
+
+<main>
+  <section class="hero">
+    <h1 id="name"></h1>
+    <a class="scroll-cue" href="#links-panel" aria-label="Show links">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <section class="panel" id="links-panel">
+    <header class="profile">
+      <p class="bio" id="bio"></p>
+      <ul class="socials" id="socials"></ul>
+    </header>
+
+    <ul class="links" id="links"></ul>
+
+    <footer id="footer"></footer>
+  </section>
+</main>
+
+<script>
+  /* ===== EDIT EVERYTHING HERE ===== */
+  const PROFILE = {
+    name: "sky_diverka",
+    // Line breaks (\n) are kept as written
+    bio: "Skydiver & Tunnel Instructor 🌪️\n⤷ I will show you how to fly! 🪂🤙🏼\n@cookiehelmets & @alti2_inc athlete",
+    // Photo file next to this page (or a full https:// URL). Leave empty for a plain gradient.
+    photo: "sky_diverka_photo.jpg",
+    footer: "Blue skies ☁ @sky_diverka"
+  };
+
+  // Icon-only row under the bio. icon: instagram | tiktok | youtube
+  const SOCIALS = [
+    { name: "Instagram", url: "https://instagram.com/sky_diverka", icon: "instagram" },
+    { name: "TikTok", url: "https://www.tiktok.com/@sky_diverka", icon: "tiktok" },
+    { name: "YouTube", url: "https://www.youtube.com/@sky_diverka", icon: "youtube" }
+  ];
+
+  // Link buttons. icon: shop | heart | mail | link
+  // badge = small pill next to the name, code = discount code shown under the button with a copy button
+  const LINKS = [
+    { label: "Lodie", badge: "-15%", sub: "15% off applied automatically", url: "https://loox.io/z/dpTghLP-f", icon: "heart" },
+    { label: "M87 Shop", badge: "-10%", sub: "shop.m87.pl", url: "https://shop.m87.pl/", icon: "shop", code: "sky_diverka", codeText: "Get 10% off with code" }
+  ];
+  /* ================================= */
+
+  const ICONS = {
+    instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
+    tiktok: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3c.4 2.3 1.8 3.8 4.1 4v3.1c-1.5.1-2.9-.4-4.1-1.2v6.3c0 3.6-2.6 5.8-5.7 5.8A5.6 5.6 0 0 1 5.3 15c0-3.5 3-5.9 6.6-5.4v3.3c-1.6-.4-3.4.5-3.4 2.2 0 1.3 1 2.3 2.3 2.3 1.4 0 2.5-.9 2.5-2.8V3h3.3z"/></svg>',
+    youtube: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12c0 1.3.1 2.6.4 3.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8zM10 15.2V8.8l5.2 3.2-5.2 3.2z"/></svg>',
+    shop: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+    heart: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3.3 5 6.8 5c2 0 3.4 1.1 4.2 2.4h2C13.8 6.1 15.2 5 17.2 5c3.5 0 5.6 3.6 4.3 6.8C19.5 16.4 12 21 12 21z"/></svg>',
+    mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
+    link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>'
+  };
+  const ARROW = '<svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 14 14 6M7 6h7v7"/></svg>';
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  document.getElementById("name").textContent = PROFILE.name;
+  document.getElementById("bio").textContent = PROFILE.bio;
+  document.getElementById("footer").textContent = PROFILE.footer;
+
+  if (PROFILE.photo) {
+    const bg = document.getElementById("bg");
+    bg.style.backgroundImage = `url("${PROFILE.photo.replace(/"/g, "%22")}")`;
+    bg.setAttribute("aria-label", PROFILE.name + " in freefall, head down against a cloudy blue sky");
+  }
+
+  document.getElementById("socials").innerHTML = SOCIALS.map(s => `
+    <li><a class="social" href="${esc(s.url)}" target="_blank" rel="noopener" aria-label="${esc(s.name)}" title="${esc(s.name)}">${ICONS[s.icon] || ICONS.link}</a></li>`).join("");
+
+  document.getElementById("links").innerHTML = LINKS.map((l, i) => {
+    const btn = `<a class="link" href="${esc(l.url)}" target="_blank" rel="noopener">
+      <span class="icon">${ICONS[l.icon] || ICONS.link}</span>
+      <span class="text"><span class="label">${esc(l.label)}${l.badge ? `<span class="badge">${esc(l.badge)}</span>` : ""}</span>${l.sub ? `<span class="sub">${esc(l.sub)}</span>` : ""}</span>
+      <span class="arrow">${ARROW}</span>
+    </a>`;
+    if (!l.code) return `<li>${btn}</li>`;
+    return `<li class="deal">${btn}
+      <div class="code"><span>${esc(l.codeText || "Code:")} <kbd id="code-${i}">${esc(l.code)}</kbd></span>
+      <button class="copy" type="button" id="copy-${i}" data-code="${esc(l.code)}" data-target="code-${i}">Copy code</button></div></li>`;
+  }).join("");
+
+  document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", () => {
+    const done = () => { b.textContent = "Copied!"; setTimeout(() => b.textContent = "Copy code", 1800); };
+    const fallback = () => {
+      const r = document.createRange(); r.selectNodeContents(document.getElementById(b.dataset.target));
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      b.textContent = "Selected, copy it";
+    };
+    try { navigator.clipboard.writeText(b.dataset.code).then(done, fallback); } catch (e) { fallback(); }
+  }));
+
+  // After a moment on the photo, glide the page up so the bio panel slides into view.
+  // Skipped if the visitor already started scrolling/tapping, or prefers reduced motion.
+  const AUTO_SLIDE_DELAY_MS = 1800;
+  (() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let touched = false;
+    const stop = () => { touched = true; };
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(e => addEventListener(e, stop, { passive: true }));
+    setTimeout(() => {
+      if (touched || scrollY > 20) return;
+      const panel = document.getElementById("links-panel");
+      const top = panel.getBoundingClientRect().top + scrollY;
+      // show the whole panel if it fits, otherwise start at its top
+      const target = Math.max(0, Math.min(top - 16, top + panel.offsetHeight - innerHeight + 24));
+      const from = scrollY, dist = target - from, dur = 1100, t0 = performance.now();
+      const ease = t => 1 - Math.pow(1 - t, 3);
+      const step = now => {
+        if (touched) return;
+        const t = Math.min(1, (now - t0) / dur);
+        scrollTo(0, from + dist * ease(t));
+        if (t < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }, AUTO_SLIDE_DELAY_MS);
+  })();
+</script>
+</body>
+</html>
